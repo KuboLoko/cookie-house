@@ -11,7 +11,10 @@ export const business = {
     handle: "@cookiehouse.pt",
     url: "https://www.instagram.com/cookiehouse.pt/",
   },
+  // Link de localização usado pelo próprio cliente na bio do Instagram.
+  mapsUrl: "https://maps.app.goo.gl/PGbB4tauLGFAhf6y8",
   timezone: "Europe/Lisbon",
-  // TODO: confirmar horário completo com o cliente. Só sabemos "aberto até às 19:00".
-  closesAt: "19:00",
+  // Todos os dias, 10:00 às 19:00 (fonte: bio oficial do Instagram, confirmado pelo cliente).
+  // Não cobre feriados nem encerramentos pontuais.
+  hours: { open: "10:00", close: "19:00" },
 } as const;

@@ -3,7 +3,26 @@
     "title": "Cookie House | Crookies e cookies em Lisboa",
     "description": "Cookies e crookies no Cais do Sodré. Só take-away, na Rua de S. Paulo 65."
   },
-  "scaffold": {
-    "status": "Scaffold pronto. Secções em construção."
+  "entry": {
+    "skip": "Saltar"
+  },
+  "hero": {
+    "brand": "Cookie House",
+    "eyebrow": "Cais do Sodré, Lisboa",
+    "title": "Crookie",
+    "tagline": "Nascido em Paris. Assado na Rua de S. Paulo.",
+    "note": "Só take-away. Sem cadeiras.",
+    "cta": "Ver no mapa",
+    "imageAlt": "Fachada da Cookie House na Rua de S. Paulo, com as portas vermelhas e o letreiro cookie house",
+    "langLabel": "Idioma",
+    "switchTo": { "href": "/en", "code": "EN", "label": "Switch to English" },
+    "current": "PT"
+  },
+  "status": {
+    "open": "Aberto agora",
+    "closesIn": "fecha em {time}",
+    "closed": "Fechado",
+    "opensToday": "abre hoje às {time}",
+    "opensTomorrow": "abre amanhã às {time}"
   }
 }

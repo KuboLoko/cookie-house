@@ -43,6 +43,43 @@ html.lenis body {
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* Entrada (só visível quando o script inline marca html[data-entry="pending"]) */
+.entry {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  background: var(--brick);
+  cursor: pointer;
+}
+html[data-entry="pending"] {
+  overflow: hidden;
+}
+html[data-entry="pending"] .entry {
+  display: flex;
+  /* Rede de segurança: se o JS falhar, o ecrã desaparece sozinho. */
+  animation: entry-failsafe 0.2s 2.5s forwards;
+}
+.entry-glow {
+  position: absolute;
+  width: 34rem;
+  height: 34rem;
+  max-width: 120vw;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(244, 233, 214, 0.35), transparent 62%);
+  opacity: 0;
+  pointer-events: none;
+}
+@keyframes entry-failsafe {
+  to {
+    opacity: 0;
+    visibility: hidden;
   }
 }
