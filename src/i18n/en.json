@@ -15,7 +15,11 @@
     "cta": "Find us on the map",
     "imageAlt": "The Cookie House storefront on Rua de S. Paulo, with red doors and the cookie house sign",
     "langLabel": "Language",
-    "switchTo": { "href": "/", "code": "PT", "label": "Mudar para português" },
+    "switchTo": {
+      "href": "/",
+      "code": "PT",
+      "label": "Mudar para português"
+    },
     "current": "EN"
   },
   "status": {
@@ -24,5 +28,33 @@
     "closed": "Closed",
     "opensToday": "opens today at {time}",
     "opensTomorrow": "opens tomorrow at {time}"
+  },
+  "paris": {
+    "label": "Act I · Paris",
+    "titleLines": [
+      "{Croissant} layers,",
+      "{cookie} soul."
+    ],
+    "body": "The crookie was born in Paris: croissant dough and cookie dough, in a single bite. When it reached Rua de S. Paulo, João Vaz Antunes and pastry chef Maksym Fishchunk did not copy it. They reinvented it. The precision of the layers stayed; Lisbon's nerve came in: pistachio and raspberry, hazelnut, dark chocolate with caramel and, yes, chouriço. Paris invented. Lisbon changed the recipe.",
+    "route": "Paris 48.86° N → Lisbon 38.71° N",
+    "caption": "Crookies in the display case",
+    "imageAlt": "Crookies dusted with powdered sugar in the Cookie House display case"
+  },
+  "manifesto": {
+    "label": "Manifesto",
+    "lines": [
+      "Tables? We don't have any.",
+      "Chairs? Also no.",
+      "Excuses? We close at {close}.",
+      "Eat it on the street. Like in Paris."
+    ],
+    "aside": "The pavement is wide open. Help yourself.",
+    "sticker": "Take-away only",
+    "marquee": [
+      "Take-away only",
+      "No chairs",
+      "Rua de S. Paulo 65",
+      "Cais do Sodré"
+    ]
   }
 }

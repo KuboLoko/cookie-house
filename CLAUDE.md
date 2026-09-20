@@ -16,5 +16,8 @@ Fusão "Drop Culture" (esqueleto) + "Laboratório Crookie" (capítulo central). 
 - Deploy: preview da Vercel, sem domínio. `robots: noindex` até haver aprovação.
 
 ## Estado
-Scaffold + Entrada + Hero prontos. Restantes secções por construir uma a uma em `src/components/sections/`.
+Scaffold + Entrada + Hero + Ato I (Paris) + Manifesto prontos. Restantes secções por construir uma a uma em `src/components/sections/`.
 Pendentes do cliente: logo vetorial (o de `content/brand.ts` é TEMP) e vídeos originais (bloqueiam a Anatomia).
+
+## Convenções de scroll reveals
+`ScrollReveal` (components/motion) envolve uma secção e anima filhos marcados com `data-reveal`, `data-reveal-clip`, `data-lines`/`data-line` e `data-parallax`. Só GSAP, só com prefers-reduced-motion: no-preference. Evitar `data-reveal` em elementos nos últimos ~10% da página (o gatilho é "top 88%"). Motion só em hover/clique (Sticker, MapCta), nunca no mesmo elemento que o GSAP.

@@ -15,7 +15,11 @@
     "cta": "Ver no mapa",
     "imageAlt": "Fachada da Cookie House na Rua de S. Paulo, com as portas vermelhas e o letreiro cookie house",
     "langLabel": "Idioma",
-    "switchTo": { "href": "/en", "code": "EN", "label": "Switch to English" },
+    "switchTo": {
+      "href": "/en",
+      "code": "EN",
+      "label": "Switch to English"
+    },
     "current": "PT"
   },
   "status": {
@@ -24,5 +28,33 @@
     "closed": "Fechado",
     "opensToday": "abre hoje às {time}",
     "opensTomorrow": "abre amanhã às {time}"
+  },
+  "paris": {
+    "label": "Ato I · Paris",
+    "titleLines": [
+      "Massa de {croissant},",
+      "alma de {bolacha}."
+    ],
+    "body": "O crookie nasceu em Paris: massa de croissant e massa de bolacha, numa só dentada. Quando chegou à Rua de S. Paulo, o João Vaz Antunes e o pasteleiro Maksym Fishchunk não o copiaram. Reinventaram-no. Ficou o rigor das camadas, entrou a ousadia lisboeta: pistáchio com framboesa, avelã, chocolate negro com caramelo e, sim, chouriço. Paris inventou. Lisboa mexeu na receita.",
+    "route": "Paris 48.86° N → Lisboa 38.71° N",
+    "caption": "Crookies na vitrine",
+    "imageAlt": "Crookies polvilhados com açúcar em pó, na vitrine da Cookie House"
+  },
+  "manifesto": {
+    "label": "Manifesto",
+    "lines": [
+      "Mesas? Não temos.",
+      "Cadeiras? Também não.",
+      "Desculpas? Fechamos às {close}.",
+      "Come na rua. Como em Paris."
+    ],
+    "aside": "O passeio está livre. Serve-te.",
+    "sticker": "Só take-away",
+    "marquee": [
+      "Só take-away",
+      "Sem cadeiras",
+      "Rua de S. Paulo 65",
+      "Cais do Sodré"
+    ]
   }
 }

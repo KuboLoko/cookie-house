@@ -83,3 +83,21 @@ html[data-entry="pending"] .entry {
     visibility: hidden;
   }
 }
+
+/* Faixa em loop do manifesto (só CSS). Em reduced-motion fica parada. */
+.marquee {
+  overflow: hidden;
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
