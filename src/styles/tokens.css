@@ -7,6 +7,10 @@
   --pistachio: #b7c97a;
   --raspberry: #d6335b;
   --caramel: #c98a3d;
+  /* Bordeaux amostrado das caixas e placas da loja (fotos do Instagram): ~#77140c */
+  --bordeaux: #7a140d;
+  /* Creme com um toque de pistáchio, para a Cafetaria (chá verde) */
+  --cafe: color-mix(in srgb, var(--pistachio) 18%, var(--cream));
 
   /* Tema ativo (o seletor de sabores troca estas duas variáveis) */
   --theme-bg: var(--cream);
@@ -42,4 +46,17 @@
   --theme-bg: var(--choc);
   --theme-fg: var(--cream);
   --theme-accent: var(--raspberry);
+}
+
+/* Chouriço: o sabor "proibido", isolado do resto da página */
+[data-theme="chourico"] {
+  --theme-bg: var(--bordeaux);
+  --theme-fg: var(--cream);
+  --theme-accent: var(--cream);
+}
+
+[data-theme="cafe"] {
+  --theme-bg: var(--cafe);
+  --theme-fg: var(--choc);
+  --theme-accent: var(--brick);
 }

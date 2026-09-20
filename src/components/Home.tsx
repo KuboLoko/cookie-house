@@ -1,3 +1,5 @@
+import Cafetaria from "@/components/sections/Cafetaria";
+import Chourico from "@/components/sections/Chourico";
 import Entry from "@/components/sections/Entry";
 import Hero from "@/components/sections/Hero";
 import Manifesto from "@/components/sections/Manifesto";
@@ -16,6 +18,8 @@ export default function Home({ locale }: { locale: Locale }) {
         <Hero locale={locale} />
         <Paris locale={locale} />
         <Manifesto locale={locale} />
+        <Chourico locale={locale} />
+        <Cafetaria locale={locale} />
         <Proof locale={locale} />
         <Visit locale={locale} />
       </main>

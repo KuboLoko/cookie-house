@@ -15,3 +15,16 @@ Nome do ficheiro: `data_códigoDoPost.jpg` (o código é o URL do post: instagra
 | 2026-07-29_DbYYNfdoA32 | Placa de parede com café, chá gelado e crookies |
 
 Faltam: os vídeos/reels e o post DYcQtG1iN4k (ver notas do scaffold). Otimizar (AVIF/WebP, redimensionar) antes de usar em produção.
+
+## Derivados
+
+| Ficheiro | Origem | Uso |
+|---|---|---|
+| derived/chourico-crop.jpg | recorte 860x470 de 2026-06-11_DZdFenQIS39 (só o chouriço, com nome e seta) | secção Chouriço |
+
+## Onde cada foto é usada
+- 2026-04-21 (fachada): Hero
+- 2026-05-08 (vitrine de crookies): Ato I, Paris
+- 2026-04-27 (chá gelado): Cafetaria
+- 2026-06-11 (mapa de sabores), recorte: Chouriço
+- Por usar: 2026-04-17, 2026-05-02, 2026-05-12, 2026-07-29 (galeria)

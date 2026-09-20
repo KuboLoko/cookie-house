@@ -107,5 +107,32 @@
         "contactLong": "Máximo {max} caracteres."
       }
     }
+  },
+  "chourico": {
+    "label": "Sabor proibido",
+    "title": "Chouriço.",
+    "lines": [
+      "Sim, numa cookie. Sim, a sério.",
+      "Há quem só acredite quando prova.",
+      "Aviso: contém chouriço."
+    ],
+    "dare": "Vais ficar a olhar ou vais provar?",
+    "imageAlt": "Cookie de chouriço com o nome e uma seta escritos ao lado, no mapa de sabores da Cookie House"
+  },
+  "cafetaria": {
+    "label": "Cafetaria",
+    "title": "Para acompanhar.",
+    "drinks": [
+      {
+        "name": "Limonada de maracujá",
+        "note": "Fresca e cítrica, para contrastar com o doce."
+      },
+      {
+        "name": "Chá gelado caseiro",
+        "note": "Chá verde, lima e hortelã. Feito cá."
+      }
+    ],
+    "foot": "Tudo para levar, como o resto.",
+    "imageAlt": "Mão a segurar um copo de chá gelado verde com uma rodela de citrino, sobre o balcão com cookies"
   }
 }

@@ -16,7 +16,7 @@ Fusão "Drop Culture" (esqueleto) + "Laboratório Crookie" (capítulo central). 
 - Deploy: preview da Vercel, sem domínio. `robots: noindex` até haver aprovação.
 
 ## Estado
-Scaffold + Entrada + Hero + Ato I (Paris) + Manifesto + Prova social + Visit (mapa, horário, "Sugere um sabor") prontos. Restantes secções por construir uma a uma em `src/components/sections/`.
+Scaffold + Entrada + Hero + Ato I (Paris) + Manifesto + Chouriço + Cafetaria + Prova social + Visit (mapa, horário, "Sugere um sabor") prontos. Restantes secções por construir uma a uma em `src/components/sections/`.
 Pendentes do cliente: logo vetorial (o de `content/brand.ts` é TEMP) e vídeos originais (bloqueiam a Anatomia).
 
 ## Convenções de scroll reveals
