@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@import "../styles/tokens.css";
+
+@theme inline {
+  --color-brick: var(--brick);
+  --color-cream: var(--cream);
+  --color-choc: var(--choc);
+  --color-pistachio: var(--pistachio);
+  --color-raspberry: var(--raspberry);
+  --color-caramel: var(--caramel);
+  --color-theme-bg: var(--theme-bg);
+  --color-theme-fg: var(--theme-fg);
+  --color-theme-accent: var(--theme-accent);
+
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-geist);
+  --font-mono: var(--font-dm-mono);
+}
+
+html {
+  background: var(--theme-bg);
+}
+
+body {
+  background: var(--theme-bg);
+  color: var(--theme-fg);
+  font-family: var(--font-geist), system-ui, sans-serif;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

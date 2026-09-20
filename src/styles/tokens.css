@@ -1,0 +1,45 @@
+/* Design tokens Cookie House.
+   Tijolo amostrado do logo (#AF403A). Cores de sabor só como acento. */
+:root {
+  --brick: #af403a;
+  --cream: #f4e9d6;
+  --choc: #2a1710;
+  --pistachio: #b7c97a;
+  --raspberry: #d6335b;
+  --caramel: #c98a3d;
+
+  /* Tema ativo (o seletor de sabores troca estas duas variáveis) */
+  --theme-bg: var(--cream);
+  --theme-fg: var(--choc);
+  --theme-accent: var(--brick);
+}
+
+[data-theme="paris"] {
+  --theme-bg: var(--cream);
+  --theme-fg: var(--choc);
+  --theme-accent: var(--brick);
+}
+
+[data-theme="corte"] {
+  --theme-bg: var(--choc);
+  --theme-fg: var(--cream);
+  --theme-accent: var(--caramel);
+}
+
+[data-theme="lisboa"] {
+  --theme-bg: var(--brick);
+  --theme-fg: var(--cream);
+  --theme-accent: var(--cream);
+}
+
+[data-flavour="pistachio"] {
+  --theme-bg: var(--pistachio);
+  --theme-fg: var(--choc);
+  --theme-accent: var(--raspberry);
+}
+
+[data-flavour="chouriço"] {
+  --theme-bg: var(--choc);
+  --theme-fg: var(--cream);
+  --theme-accent: var(--raspberry);
+}
