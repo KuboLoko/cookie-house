@@ -9,6 +9,7 @@ import { getGsap } from "@/lib/gsap";
  *  - data-reveal            sobe e aparece (data-reveal-delay="0.2" opcional)
  *  - data-reveal-clip       abre de baixo para cima (molduras de imagem)
  *  - data-lines + data-line linhas de título a subir de dentro de uma máscara
+ *  - data-stamp             carimbo que cai e bate (selos)
  *  - data-parallax          desliza suavemente com o scroll (dentro de um pai com overflow hidden)
  * Sem prefers-reduced-motion. Sem JS o conteúdo fica simplesmente visível.
  */
@@ -44,6 +45,19 @@ export default function ScrollReveal({
           clipPath: "inset(100% 0% 0% 0%)",
           duration: 1.2,
           ease: "power4.inOut",
+          scrollTrigger: { trigger: el, start: "top 85%", once: true },
+        });
+      });
+
+      // Carimbo: cai de cima (grande) e "bate" no papel.
+      root.querySelectorAll<HTMLElement>("[data-stamp]").forEach((el) => {
+        gsap.from(el, {
+          scale: 1.7,
+          rotate: 14,
+          opacity: 0,
+          duration: 0.45,
+          ease: "power4.in",
+          delay: Number(el.dataset.revealDelay ?? 0),
           scrollTrigger: { trigger: el, start: "top 85%", once: true },
         });
       });

@@ -56,5 +56,56 @@
       "Rua de S. Paulo 65",
       "Cais do Sodré"
     ]
+  },
+  "proof": {
+    "label": "Tried and approved",
+    "titleLines": [
+      "Five {stars}.",
+      "And a chouriço cookie."
+    ],
+    "google": {
+      "aria": "See Cookie House reviews on Google (opens in a new tab)",
+      "caption": "Google rating, as of {date}",
+      "ring": "GOOGLE • RATING • GOOGLE • RATING • GOOGLE • RATING • "
+    },
+    "timeOut": {
+      "aria": "Read the Time Out Lisboa article about Cookie House (opens in a new tab)",
+      "caption": "Featured in Time Out Lisboa",
+      "link": "Read the article",
+      "ring": "TIME OUT LISBOA • TIME OUT LISBOA • "
+    },
+    "paraphraseLabel": "A summary of what customers single out",
+    "paraphrase": "The pistachio and raspberry, with its melted chocolate heart, is the flavor people talk about most."
+  },
+  "visit": {
+    "label": "Visit",
+    "title": "Rua de S. Paulo, 65.",
+    "area": "Cais do Sodré, Lisbon",
+    "addressLabel": "Address",
+    "hoursLabel": "Hours",
+    "daily": "Every day",
+    "hoursJoin": "to",
+    "mapsLink": "Open in Google Maps",
+    "instagramLabel": "Instagram",
+    "mapTitle": "Map showing the location of Cookie House, Rua de S. Paulo 65, Lisbon",
+    "form": {
+      "title": "Missing your flavor?",
+      "intro": "Tell us your idea. If it's good, it might end up on the tray.",
+      "flavorLabel": "Your flavor",
+      "flavorPlaceholder": "E.g. orange with dark chocolate",
+      "contactLabel": "Name or contact (optional)",
+      "contactHelp": "Only if you'd like us to reply.",
+      "submit": "Send suggestion",
+      "sending": "Sending…",
+      "success": "Got it. Thanks for the idea.",
+      "again": "Send another",
+      "error": "We couldn't send that right now. Please try again in a moment.",
+      "errors": {
+        "flavorRequired": "Type the flavor you have in mind.",
+        "flavorShort": "Tell us a little more (at least {min} letters).",
+        "flavorLong": "Maximum {max} characters.",
+        "contactLong": "Maximum {max} characters."
+      }
+    }
   }
 }

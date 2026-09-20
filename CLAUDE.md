@@ -16,8 +16,13 @@ Fusão "Drop Culture" (esqueleto) + "Laboratório Crookie" (capítulo central). 
 - Deploy: preview da Vercel, sem domínio. `robots: noindex` até haver aprovação.
 
 ## Estado
-Scaffold + Entrada + Hero + Ato I (Paris) + Manifesto prontos. Restantes secções por construir uma a uma em `src/components/sections/`.
+Scaffold + Entrada + Hero + Ato I (Paris) + Manifesto + Prova social + Visit (mapa, horário, "Sugere um sabor") prontos. Restantes secções por construir uma a uma em `src/components/sections/`.
 Pendentes do cliente: logo vetorial (o de `content/brand.ts` é TEMP) e vídeos originais (bloqueiam a Anatomia).
 
 ## Convenções de scroll reveals
 `ScrollReveal` (components/motion) envolve uma secção e anima filhos marcados com `data-reveal`, `data-reveal-clip`, `data-lines`/`data-line` e `data-parallax`. Só GSAP, só com prefers-reduced-motion: no-preference. Evitar `data-reveal` em elementos nos últimos ~10% da página (o gatilho é "top 88%"). Motion só em hover/clique (Sticker, MapCta), nunca no mesmo elemento que o GSAP.
+
+## Prova social e Visit
+- `content/proof.ts`: nota Google 5.0 SEM nº de avaliações, com `asOf` (AAAA-MM) mostrado como "em setembro de 2026". Reconfirmar a nota e atualizar `asOf` antes do lançamento. Time Out: só link de texto e selo, sem imagem nem texto do artigo.
+- Mapa: `business.mapsEmbedUrl` (o link curto do Instagram não pode ser embebido). O botão "Abrir no Google Maps" usa o link curto.
+- Formulário "Sugere um sabor" (`ui/SuggestFlavor.tsx`): validação no cliente, honeypot, POST para `/api/suggest-flavor` (501 por agora => estado de erro). Quando o backend existir, basta devolver 2xx.
