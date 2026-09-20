@@ -27,4 +27,4 @@ Faltam: os vídeos/reels e o post DYcQtG1iN4k (ver notas do scaffold). Otimizar 
 - 2026-05-08 (vitrine de crookies): Ato I, Paris
 - 2026-04-27 (chá gelado): Cafetaria
 - 2026-06-11 (mapa de sabores), recorte: Chouriço
-- Por usar: 2026-04-17, 2026-05-02, 2026-05-12, 2026-07-29 (galeria)
+- Galeria: 2026-04-17, 2026-05-02, 2026-05-12, 2026-07-29 (a última mostra chá gelado e café numa placa de parede, composição diferente da Cafetaria)

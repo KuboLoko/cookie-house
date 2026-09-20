@@ -142,5 +142,28 @@
       "Pasteleiro"
     ],
     "body": "Por trás da Cookie House há duas pessoas e uma mesma obsessão: fazer bem feito. O João Vaz Antunes, fundador, foi quem trouxe o crookie para Lisboa. O Maksym Fishchunk, pasteleiro, é quem o faz acontecer."
+  },
+  "gallery": {
+    "title": "Galeria",
+    "more": "Mais no Instagram",
+    "alts": [
+      "Mão a segurar uma crookie dentro de um saco de papel com letras vermelhas, com tabuleiros de cookies ao fundo",
+      "Caixas escuras da Cookie House empilhadas numa prateleira iluminada, com um candeeiro vermelho e azulejos claros",
+      "Caixa vermelha aberta com cookies embrulhadas em papel, e a tampa com uma mensagem de boas-vindas",
+      "Placa de parede vermelha com o logótipo em relevo, e por baixo um copo de café, um chá gelado verde e duas crookies em papel"
+    ]
+  },
+  "footer": {
+    "preorder": {
+      "label": "Pré-encomenda",
+      "title": "Encomenda uma caixa.",
+      "body": "Manda mensagem no WhatsApp e combinamos a tua caixa.",
+      "cta": "Encomendar por WhatsApp",
+      "note": "Levantamento na Rua de S. Paulo 65.",
+      "message": "Olá! Gostava de encomendar uma caixa de cookies da Cookie House."
+    },
+    "instagram": "Instagram",
+    "maps": "Google Maps",
+    "rights": "© {year} Cookie House"
   }
 }

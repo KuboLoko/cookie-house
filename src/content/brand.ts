@@ -7,3 +7,12 @@ export const entryLogo = {
   height: 225,
   alt: "Cookie House",
 } as const;
+
+// TEMP: o mesmo logo provisório em maior resolução, só as letras brancas, fundo transparente, recortadas (WebP extraído do raster embebido no SVG
+// do cliente, que NÃO é vetorial). Trocar quando houver o logo vetorial final.
+export const footerLogo = {
+  src: "/brand/derived/logo-temp-wordmark.webp",
+  width: 932,
+  height: 462,
+  alt: "Cookie House",
+} as const;

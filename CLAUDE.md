@@ -16,7 +16,7 @@ Fusão "Drop Culture" (esqueleto) + "Laboratório Crookie" (capítulo central). 
 - Deploy: preview da Vercel, sem domínio. `robots: noindex` até haver aprovação.
 
 ## Estado
-Scaffold + Entrada + Hero + Ato I (Paris) + Manifesto + Chouriço + Cafetaria + Prova social + Makers + Visit (mapa, horário, "Sugere um sabor") prontos. Restantes secções por construir uma a uma em `src/components/sections/`.
+Scaffold + Entrada + Hero + Ato I (Paris) + Manifesto + Chouriço + Cafetaria + Prova social + Makers + Visit + Galeria + Footer (WhatsApp, migalhas) (mapa, horário, "Sugere um sabor") prontos. Restantes secções por construir uma a uma em `src/components/sections/`.
 Pendentes do cliente: logo vetorial (o de `content/brand.ts` é TEMP) e vídeos originais (bloqueiam a Anatomia).
 
 ## Convenções de scroll reveals
@@ -29,3 +29,10 @@ Pendentes do cliente: logo vetorial (o de `content/brand.ts` é TEMP) e vídeos 
 
 ## Makers
 Depois da Prova social e antes do Visit (tom: creme -> areia -> chocolate). Só tipografia, estilo créditos, sem foto: nenhuma foto recolhida mostra os fundadores. Quando o cliente enviar retratos reais, acrescentá-los em `Makers.tsx`. Nomes em `business.makers`, papéis em `i18n.makers.roles` (mesma ordem).
+
+## Footer, WhatsApp e migalhas
+- `WHATSAPP_NUMBER_PLACEHOLDER` (business.ts) é um número FALSO: o botão de pré-encomenda gera `wa.me/<número>?text=<mensagem>` mas só funciona com o número real do WhatsApp Business do cliente. Não ligado a `/api/preorder` (por definição).
+- `FooterCrumbs`: matter-js carregado sob demanda; loop para quando tudo adormece; toque nunca é interceptado (sem listeners matter em touch/wheel); reduced-motion => monte estático em SVG.
+- ScrollReveal: gatilhos limitados ao scroll máximo (conteúdo no fim da página já dispara).
+- Logo do rodapé: `public/brand/derived/logo-temp-wordmark.webp` (TEMP, branco sobre transparente, extraído do raster do SVG do cliente).
+- Mensagem do WhatsApp SEM emoji, de propósito: testado em 2026-09, a página do WhatsApp (wa.me e api.whatsapp.com/send) estraga o emoji 🍪 e mostra "�". Se quiserem emoji, testar primeiro com o número real e num telemóvel.

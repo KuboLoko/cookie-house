@@ -24,3 +24,10 @@ export const business = {
   // Não cobre feriados nem encerramentos pontuais.
   hours: { open: "10:00", close: "19:00" },
 } as const;
+
+/**
+ * TODO(cliente): substituir pelo número real do WhatsApp Business, só dígitos com indicativo
+ * (ex.: "351912345678"). Enquanto for este valor, o botão de pré-encomenda abre o WhatsApp
+ * com um número inválido. Não usar números pessoais aqui.
+ */
+export const WHATSAPP_NUMBER_PLACEHOLDER = "351000000000";

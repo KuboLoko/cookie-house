@@ -104,3 +104,11 @@ html[data-entry="pending"] .entry {
     transform: translateX(-50%);
   }
 }
+
+/* Migalhas do rodapé: o monte estático desaparece quando a física assume. */
+.crumbs-static {
+  transition: opacity 0.3s ease;
+}
+.crumbs[data-physics="on"] .crumbs-static {
+  opacity: 0;
+}
