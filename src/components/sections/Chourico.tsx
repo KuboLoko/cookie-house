@@ -61,17 +61,20 @@ export default function Chourico({ locale }: { locale: Locale }) {
             >
               {t.lines[1]}
             </p>
+            {/* Piada à margem, de propósito sem formato de rótulo/aviso (mono, maiúsculas, negrito) */}
             <p
               data-reveal
               data-reveal-delay="0.2"
-              className="mt-8 font-mono text-xs uppercase tracking-widest"
+              className="mt-6 font-display text-xl font-light [font-variation-settings:'SOFT'_100,'WONK'_1,'opsz'_36]"
             >
-              {t.lines[2]}
+              <span className="inline-block -rotate-2 opacity-80">
+                {t.lines[2]}
+              </span>
             </p>
             <p
               data-reveal
               data-reveal-delay="0.3"
-              className="mt-3 inline-block border-b-2 border-cream pb-1 font-mono text-sm font-medium uppercase tracking-wider"
+              className="mt-8 inline-block border-b-2 border-cream pb-1 font-mono text-sm font-medium uppercase tracking-wider"
             >
               {t.dare}&nbsp;→
             </p>
@@ -91,7 +94,6 @@ export default function Chourico({ locale }: { locale: Locale }) {
                     src={CHOURICO_IMAGE}
                     alt={t.imageAlt}
                     fill
-                    quality={80}
                     sizes="(min-width: 768px) 46vw, 90vw"
                     className="object-cover"
                   />

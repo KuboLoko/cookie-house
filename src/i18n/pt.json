@@ -114,7 +114,7 @@
     "lines": [
       "Sim, numa cookie. Sim, a sério.",
       "Há quem só acredite quando prova.",
-      "Aviso: contém chouriço."
+      "(o chouriço não é gralha)"
     ],
     "dare": "Vais ficar a olhar ou vais provar?",
     "imageAlt": "Cookie de chouriço com o nome e uma seta escritos ao lado, no mapa de sabores da Cookie House"
@@ -134,5 +134,13 @@
     ],
     "foot": "Tudo para levar, como o resto.",
     "imageAlt": "Mão a segurar um copo de chá gelado verde com uma rodela de citrino, sobre o balcão com cookies"
+  },
+  "makers": {
+    "label": "As mãos",
+    "roles": [
+      "Fundador",
+      "Pasteleiro"
+    ],
+    "body": "Por trás da Cookie House há duas pessoas e uma mesma obsessão: fazer bem feito. O João Vaz Antunes, fundador, foi quem trouxe o crookie para Lisboa. O Maksym Fishchunk, pasteleiro, é quem o faz acontecer."
   }
 }

@@ -2,6 +2,7 @@ import Cafetaria from "@/components/sections/Cafetaria";
 import Chourico from "@/components/sections/Chourico";
 import Entry from "@/components/sections/Entry";
 import Hero from "@/components/sections/Hero";
+import Makers from "@/components/sections/Makers";
 import Manifesto from "@/components/sections/Manifesto";
 import Paris from "@/components/sections/Paris";
 import Proof from "@/components/sections/Proof";
@@ -21,6 +22,7 @@ export default function Home({ locale }: { locale: Locale }) {
         <Chourico locale={locale} />
         <Cafetaria locale={locale} />
         <Proof locale={locale} />
+        <Makers locale={locale} />
         <Visit locale={locale} />
       </main>
     </>

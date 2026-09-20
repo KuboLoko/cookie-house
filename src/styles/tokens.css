@@ -10,6 +10,8 @@
   /* Bordeaux amostrado das caixas e placas da loja (fotos do Instagram): ~#77140c */
   --bordeaux: #7a140d;
   /* Creme com um toque de pistáchio, para a Cafetaria (chá verde) */
+  /* Areia: creme aquecido com caramelo, para os Makers (entre o creme da Prova e o escuro do Visit) */
+  --sand: color-mix(in srgb, var(--caramel) 22%, var(--cream));
   --cafe: color-mix(in srgb, var(--pistachio) 18%, var(--cream));
 
   /* Tema ativo (o seletor de sabores troca estas duas variáveis) */
@@ -59,4 +61,10 @@
   --theme-bg: var(--cafe);
   --theme-fg: var(--choc);
   --theme-accent: var(--brick);
+}
+
+[data-theme="makers"] {
+  --theme-bg: var(--sand);
+  --theme-fg: var(--choc);
+  --theme-accent: var(--bordeaux);
 }

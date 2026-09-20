@@ -17,6 +17,8 @@ export const business = {
   // sítio: a ficha "Cookie House - Lisboa" (38.7076739, -9.1442549), a que o link curto resolve.
   mapsEmbedUrl:
     "https://www.google.com/maps?q=Cookie+House+Rua+de+S.+Paulo+65+Lisboa&z=17&output=embed",
+  // Ordem = ordem dos papéis em i18n (makers.roles). Só o que o cliente confirmou: fundador e pasteleiro.
+  makers: ["João Vaz Antunes", "Maksym Fishchunk"],
   timezone: "Europe/Lisbon",
   // Todos os dias, 10:00 às 19:00 (fonte: bio oficial do Instagram, confirmado pelo cliente).
   // Não cobre feriados nem encerramentos pontuais.

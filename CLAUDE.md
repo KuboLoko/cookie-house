@@ -16,7 +16,7 @@ Fusão "Drop Culture" (esqueleto) + "Laboratório Crookie" (capítulo central). 
 - Deploy: preview da Vercel, sem domínio. `robots: noindex` até haver aprovação.
 
 ## Estado
-Scaffold + Entrada + Hero + Ato I (Paris) + Manifesto + Chouriço + Cafetaria + Prova social + Visit (mapa, horário, "Sugere um sabor") prontos. Restantes secções por construir uma a uma em `src/components/sections/`.
+Scaffold + Entrada + Hero + Ato I (Paris) + Manifesto + Chouriço + Cafetaria + Prova social + Makers + Visit (mapa, horário, "Sugere um sabor") prontos. Restantes secções por construir uma a uma em `src/components/sections/`.
 Pendentes do cliente: logo vetorial (o de `content/brand.ts` é TEMP) e vídeos originais (bloqueiam a Anatomia).
 
 ## Convenções de scroll reveals
@@ -26,3 +26,6 @@ Pendentes do cliente: logo vetorial (o de `content/brand.ts` é TEMP) e vídeos 
 - `content/proof.ts`: nota Google 5.0 SEM nº de avaliações, com `asOf` (AAAA-MM) mostrado como "em setembro de 2026". Reconfirmar a nota e atualizar `asOf` antes do lançamento. Time Out: só link de texto e selo, sem imagem nem texto do artigo.
 - Mapa: `business.mapsEmbedUrl` (o link curto do Instagram não pode ser embebido). O botão "Abrir no Google Maps" usa o link curto.
 - Formulário "Sugere um sabor" (`ui/SuggestFlavor.tsx`): validação no cliente, honeypot, POST para `/api/suggest-flavor` (501 por agora => estado de erro). Quando o backend existir, basta devolver 2xx.
+
+## Makers
+Depois da Prova social e antes do Visit (tom: creme -> areia -> chocolate). Só tipografia, estilo créditos, sem foto: nenhuma foto recolhida mostra os fundadores. Quando o cliente enviar retratos reais, acrescentá-los em `Makers.tsx`. Nomes em `business.makers`, papéis em `i18n.makers.roles` (mesma ordem).

@@ -114,7 +114,7 @@
     "lines": [
       "Yes, in a cookie. Yes, really.",
       "Some people only believe it once they've tried it.",
-      "Warning: contains chouriço."
+      "(the chouriço is not a typo)"
     ],
     "dare": "Are you going to stare, or are you going to taste?",
     "imageAlt": "A chouriço cookie with its name and an arrow written beside it, on the Cookie House flavor map"
@@ -134,5 +134,13 @@
     ],
     "foot": "All to go, like everything else.",
     "imageAlt": "A hand holding a glass of green iced tea with a citrus slice, above the counter of cookies"
+  },
+  "makers": {
+    "label": "The hands",
+    "roles": [
+      "Founder",
+      "Pastry chef"
+    ],
+    "body": "Behind Cookie House there are two people and one shared obsession: doing it properly. João Vaz Antunes, the founder, is the one who brought the crookie to Lisbon. Maksym Fishchunk, the pastry chef, is the one who makes it happen."
   }
 }
