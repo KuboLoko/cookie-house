@@ -42,5 +42,5 @@ Entre o Manifesto e o Chouriço. Sabor ativo => `data-flavour` na secção => pa
 
 ## Vocabulário (confirmado)
 - Marca: **Cookie House** (nunca "Crookie House"). Produto: **crookie** = "um croissant recheado com massa de bolacha" / "a croissant filled with cookie dough" (fonte: NiT, nit.pt/comida/cafes-e-bares/pistacio-ou-chourico-a-nova-loja-de-lisboa-tem-cookies-com-sabores-bizarros; só este facto, sem citar o texto).
-- O H1 do Hero "Crookie" é o produto, de propósito.
+- O H1 do Hero diz "Cookie" (a marca), corrigido a pedido do cliente. "Crookie" só aparece como nome do produto.
 - Não chamar "crookie" a uma cookie redonda (ex.: foto 2026-04-17 é uma cookie).
