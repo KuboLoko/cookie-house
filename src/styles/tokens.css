@@ -9,6 +9,9 @@
   --caramel: #c98a3d;
   /* Bordeaux amostrado das caixas e placas da loja (fotos do Instagram): ~#77140c */
   --bordeaux: #7a140d;
+  /* Castanho de biscoito (avelã) e framboesa escura, para contraste em texto grande sobre pistáchio */
+  --hazel: #8a5a34;
+  --raspberry-deep: #a81c3c;
   /* Creme com um toque de pistáchio, para a Cafetaria (chá verde) */
   /* Areia: creme aquecido com caramelo, para os Makers (entre o creme da Prova e o escuro do Visit) */
   --sand: color-mix(in srgb, var(--caramel) 22%, var(--cream));
@@ -38,10 +41,35 @@
   --theme-accent: var(--cream);
 }
 
+/* Temas de sabor dos Drops (o seletor troca o data-flavour da secção; a cor transita por CSS) */
+[data-flavour="classic"] {
+  --theme-bg: var(--caramel);
+  --theme-fg: var(--choc);
+  --theme-accent: var(--bordeaux);
+}
+
+[data-flavour="crookie"] {
+  --theme-bg: var(--sand);
+  --theme-fg: var(--choc);
+  --theme-accent: var(--bordeaux);
+}
+
 [data-flavour="pistachio"] {
   --theme-bg: var(--pistachio);
   --theme-fg: var(--choc);
-  --theme-accent: var(--raspberry);
+  --theme-accent: var(--raspberry-deep);
+}
+
+[data-flavour="hazelnut"] {
+  --theme-bg: var(--hazel);
+  --theme-fg: var(--cream);
+  --theme-accent: var(--sand);
+}
+
+[data-flavour="chocolate"] {
+  --theme-bg: var(--choc);
+  --theme-fg: var(--cream);
+  --theme-accent: var(--caramel);
 }
 
 [data-flavour="chouriço"] {

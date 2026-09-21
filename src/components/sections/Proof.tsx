@@ -14,7 +14,8 @@ export default function Proof({ locale }: { locale: Locale }) {
       id="proof"
       data-theme="paris"
       aria-labelledby="proof-title"
-      className="bg-theme-bg text-theme-fg"
+      // overflow-x-clip: os selos começam com scale 1.7 (carimbo) e esticariam a página na horizontal antes de disparar
+      className="overflow-x-clip bg-theme-bg text-theme-fg"
     >
       <ScrollReveal className="mx-auto max-w-7xl px-5 py-28 sm:px-10 md:py-40">
         <p

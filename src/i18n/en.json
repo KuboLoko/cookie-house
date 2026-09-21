@@ -32,10 +32,10 @@
   "paris": {
     "label": "Act I · Paris",
     "titleLines": [
-      "{Croissant} layers,",
-      "{cookie} soul."
+      "{Croissant} outside,",
+      "{cookie} dough inside."
     ],
-    "body": "The crookie was born in Paris: croissant dough and cookie dough, in a single bite. When it reached Rua de S. Paulo, João Vaz Antunes and pastry chef Maksym Fishchunk did not copy it. They reinvented it. The precision of the layers stayed; Lisbon's nerve came in: pistachio and raspberry, hazelnut, dark chocolate with caramel and, yes, chouriço. Paris invented. Lisbon changed the recipe.",
+    "body": "The crookie was born in Paris: a croissant filled with cookie dough. When it reached Rua de S. Paulo, João Vaz Antunes and pastry chef Maksym Fishchunk did not copy it. They reinvented it. The precision of the layers stayed; Lisbon's nerve came in: pistachio and raspberry, hazelnut, dark chocolate with caramel and, yes, chouriço. Paris invented. Lisbon changed the recipe.",
     "route": "Paris 48.86° N → Lisbon 38.71° N",
     "caption": "Crookies in the display case",
     "imageAlt": "Crookies dusted with powdered sugar in the Cookie House display case"
@@ -147,10 +147,10 @@
     "title": "Gallery",
     "more": "More on Instagram",
     "alts": [
-      "A hand holding a crookie in a paper bag with red lettering, with trays of cookies behind",
+      "A hand holding a dark cookie in a paper bag with red lettering, with trays of cookies behind",
       "Dark Cookie House boxes stacked on a lit shelf, with a red lamp and pale tiles",
       "An open red box of cookies wrapped in paper, with a welcome message on the lid",
-      "A red wall plaque with the embossed logo, and below it a coffee cup, a green iced tea and two crookies on paper"
+      "A red wall plaque with the embossed logo, and below it a lidded cup, a green iced tea, a cookie and a crookie on paper"
     ]
   },
   "footer": {
@@ -165,5 +165,48 @@
     "instagram": "Instagram",
     "maps": "Google Maps",
     "rights": "© {year} Cookie House"
+  },
+  "drops": {
+    "label": "Act III · Lisbon",
+    "title": "The drops.",
+    "hint": "Pick one.",
+    "listLabel": "Flavors",
+    "items": {
+      "classic": {
+        "name": "Classic",
+        "tag": "Chocolate chip",
+        "line": "Golden, with pieces of chocolate. The one everyone knows, done properly.",
+        "alt": "Classic cookie with pieces of chocolate, seen from above"
+      },
+      "crookie": {
+        "name": "Crookie",
+        "tag": "Filled croissant",
+        "line": "A croissant filled with cookie dough.",
+        "alt": "Crookie with chocolate pieces and powdered sugar, seen from above"
+      },
+      "pistachio": {
+        "name": "Pistachio & raspberry",
+        "tag": "Chocolate center",
+        "line": "Pistachio and raspberry, with the chocolate center still melted.",
+        "alt": "Pistachio and raspberry cookie, seen from above"
+      },
+      "hazelnut": {
+        "name": "Hazelnut",
+        "tag": "Just hazelnut",
+        "line": "Hazelnut, no distractions.",
+        "alt": "Hazelnut cookie with visible hazelnut pieces, seen from above"
+      },
+      "chocolate": {
+        "name": "Chocolate & caramel",
+        "tag": "Dark chocolate",
+        "line": "Dark chocolate and caramel: bitter and sweet in the same bite.",
+        "alt": "Dark chocolate and caramel cookie, seen from above"
+      }
+    },
+    "chourico": {
+      "name": "Chouriço",
+      "line": "The forbidden flavor.",
+      "cta": "See the dare"
+    }
   }
 }

@@ -1,5 +1,6 @@
 import Cafetaria from "@/components/sections/Cafetaria";
 import Chourico from "@/components/sections/Chourico";
+import Drops from "@/components/sections/Drops";
 import Entry from "@/components/sections/Entry";
 import Footer from "@/components/sections/Footer";
 import Gallery from "@/components/sections/Gallery";
@@ -21,6 +22,7 @@ export default function Home({ locale }: { locale: Locale }) {
         <Hero locale={locale} />
         <Paris locale={locale} />
         <Manifesto locale={locale} />
+        <Drops labels={t.drops} />
         <Chourico locale={locale} />
         <Cafetaria locale={locale} />
         <Proof locale={locale} />

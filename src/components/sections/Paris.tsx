@@ -3,6 +3,9 @@ import ScrollReveal from "@/components/motion/ScrollReveal";
 import Accent from "@/components/ui/Accent";
 import { getDictionary, type Locale } from "@/i18n";
 
+// FACTO: o crookie é um croissant recheado com massa de bolacha (fonte: artigo da NiT sobre a Cookie House,
+// nit.pt/comida/cafes-e-bares/pistacio-ou-chourico-a-nova-loja-de-lisboa-tem-cookies-com-sabores-bizarros).
+// Não descrever como "croissant + cookie" em par vago.
 // Vitrine de crookies (camadas folhadas com açúcar em pó). Foto do Instagram oficial do cliente.
 const PARIS_IMAGE = "/media/instagram/2026-05-08_DYFfH54iAdm.jpg";
 
