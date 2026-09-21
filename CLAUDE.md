@@ -13,7 +13,7 @@ Fusão "Drop Culture" (esqueleto) + "Laboratório Crookie" (capítulo central). 
 - Sem stock nem imagens geradas por IA.
 - GSAP trata do scroll (sempre via `src/lib/gsap.ts`), Motion trata da UI. Nunca os dois no mesmo elemento.
 - `/api/preorder` e `/api/suggest-flavor` são placeholders (501). A lógica liga-se depois à automação de WhatsApp.
-- Deploy: preview da Vercel, sem domínio. `robots: noindex` até haver aprovação.
+- Deploy: preview da Vercel, sem domínio. noindex em duas camadas até haver aprovação: `<meta robots>` (layouts) e cabeçalho `X-Robots-Tag` (next.config.ts). Remover ambos ao lançar.
 
 ## Estado
 Scaffold + Entrada + Hero + Ato I (Paris) + Manifesto + Chouriço + Cafetaria + Prova social + Makers + Visit + Galeria + Footer (WhatsApp, migalhas) + Drops (Ato III) (mapa, horário, "Sugere um sabor") prontos. Restantes secções por construir uma a uma em `src/components/sections/`.
