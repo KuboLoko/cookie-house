@@ -14,6 +14,7 @@ type Labels = {
   success: string;
   again: string;
   error: string;
+  soon: string;
   errors: {
     flavorRequired: string;
     flavorShort: string;
@@ -22,13 +23,13 @@ type Labels = {
   };
 };
 
-type Status = "idle" | "sending" | "success" | "error";
+type Status = "idle" | "sending" | "success" | "error" | "soon";
 type Errors = { flavor?: string; contact?: string };
 
 const LIMITS = { flavorMin: 3, flavorMax: 200, contactMax: 80 } as const;
 
 const field =
-  "mt-2 block w-full border-0 border-b-2 border-choc/40 bg-transparent px-0 py-3 text-lg text-theme-fg outline-none transition-colors placeholder:text-choc/40 focus:border-brick aria-[invalid=true]:border-raspberry";
+  "mt-2 block w-full border-0 border-b-2 border-choc/60 bg-transparent px-0 py-3 text-lg text-theme-fg outline-none transition-colors placeholder:text-choc/70 focus:border-brick aria-[invalid=true]:border-raspberry";
 
 /**
  * "Sugere um sabor". Só UI + validação no cliente. Faz POST para /api/suggest-flavor
@@ -38,9 +39,11 @@ const field =
 export default function SuggestFlavor({
   labels,
   locale,
+  instagram,
 }: {
   labels: Labels;
   locale: "pt" | "en";
+  instagram: { url: string; handle: string };
 }) {
   const [flavor, setFlavor] = useState("");
   const [contact, setContact] = useState("");
@@ -94,6 +97,8 @@ export default function SuggestFlavor({
           locale,
         }),
       });
+      // 501 = o backend ainda não está ligado (placeholder): mostrar um estado honesto, não um erro.
+      if (res.status === 501) return setStatus("soon");
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       setStatus("success");
     } catch {
@@ -158,12 +163,12 @@ export default function SuggestFlavor({
           className={`${field} resize-none`}
         />
         <div className="mt-2 flex justify-between gap-4 font-mono text-xs">
-          <p id="sf-flavor-err" role="alert" className="text-raspberry">
+          <p id="sf-flavor-err" role="alert" className="text-raspberry-deep">
             {errors.flavor}
           </p>
           <p
             id="sf-flavor-count"
-            className={`ml-auto tabular-nums ${flavor.trim().length > LIMITS.flavorMax ? "text-raspberry" : "opacity-60"}`}
+            className={`ml-auto tabular-nums ${flavor.trim().length > LIMITS.flavorMax ? "text-raspberry-deep" : "opacity-80"}`}
           >
             {flavor.trim().length}/{LIMITS.flavorMax}
           </p>
@@ -197,11 +202,11 @@ export default function SuggestFlavor({
           className={field}
         />
         {errors.contact ? (
-          <p id="sf-contact-err" role="alert" className="mt-2 font-mono text-xs text-raspberry">
+          <p id="sf-contact-err" role="alert" className="mt-2 font-mono text-xs text-raspberry-deep">
             {errors.contact}
           </p>
         ) : (
-          <p id="sf-contact-help" className="mt-2 font-mono text-xs opacity-60">
+          <p id="sf-contact-help" className="mt-2 font-mono text-xs opacity-80">
             {labels.contactHelp}
           </p>
         )}
@@ -227,10 +232,23 @@ export default function SuggestFlavor({
         >
           {sending ? labels.sending : labels.submit}
         </button>
-        <p role="status" aria-live="polite" className="font-mono text-xs text-raspberry">
+        <p role="status" aria-live="polite" className="font-mono text-xs text-raspberry-deep">
           {status === "error" ? labels.error : ""}
         </p>
       </div>
+      {status === "soon" && (
+        <p role="status" className="max-w-md text-base leading-relaxed">
+          {labels.soon}{" "}
+          <a
+            href={instagram.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whitespace-nowrap underline underline-offset-4 hover:text-brick"
+          >
+            {instagram.handle} ↗
+          </a>
+        </p>
+      )}
     </form>
   );
 }

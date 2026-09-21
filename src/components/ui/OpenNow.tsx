@@ -39,7 +39,7 @@ export default function OpenNow({ labels }: { labels: Labels }) {
 
   return (
     <p
-      className="inline-flex min-h-9 items-center gap-2.5 rounded-full border border-cream/30 bg-choc/40 px-4 py-1.5 font-mono text-xs uppercase tracking-wider text-cream backdrop-blur-sm"
+      className="inline-flex min-h-9 items-center gap-2.5 rounded-full border border-cream/30 bg-choc/60 px-4 py-1.5 font-mono text-xs uppercase tracking-wider text-cream backdrop-blur-sm"
       data-state={status?.state ?? "loading"}
     >
       <span

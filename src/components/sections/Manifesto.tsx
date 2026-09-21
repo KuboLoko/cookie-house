@@ -67,7 +67,7 @@ export default function Manifesto({ locale }: { locale: Locale }) {
             <p className="font-mono text-sm uppercase leading-relaxed tracking-widest">
               {t.aside}
             </p>
-            <p className="mt-3 font-mono text-xs uppercase tracking-widest opacity-75">
+            <p className="mt-3 font-mono text-xs uppercase tracking-widest">
               {business.address.street} · {business.address.area}
             </p>
           </div>

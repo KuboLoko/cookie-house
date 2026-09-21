@@ -19,7 +19,7 @@ export default function Paris({ locale }: { locale: Locale }) {
       aria-labelledby="paris-title"
       className="bg-theme-bg text-theme-fg"
     >
-      <ScrollReveal className="mx-auto grid max-w-7xl gap-y-16 px-5 py-28 sm:px-10 md:grid-cols-12 md:gap-x-10 md:py-44">
+      <ScrollReveal className="mx-auto grid max-w-7xl gap-y-16 px-5 py-28 sm:px-10 md:grid-cols-12 md:gap-x-10 md:py-40">
         <div className="md:col-span-7 md:pt-20">
           <p
             data-reveal
@@ -52,7 +52,7 @@ export default function Paris({ locale }: { locale: Locale }) {
           <p
             data-reveal
             data-reveal-delay="0.1"
-            className="mt-10 font-mono text-xs uppercase tracking-widest opacity-60"
+            className="mt-10 font-mono text-xs uppercase tracking-widest opacity-80"
           >
             {t.route}
           </p>
@@ -74,7 +74,7 @@ export default function Paris({ locale }: { locale: Locale }) {
               />
             </div>
           </div>
-          <figcaption className="mt-3 font-mono text-[0.7rem] uppercase tracking-widest opacity-60">
+          <figcaption className="mt-3 font-mono text-[0.7rem] uppercase tracking-widest opacity-80">
             {t.caption}
           </figcaption>
         </figure>

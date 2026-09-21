@@ -105,7 +105,8 @@
         "flavorShort": "Conta-nos um bocadinho mais (mínimo {min} letras).",
         "flavorLong": "Máximo {max} caracteres.",
         "contactLong": "Máximo {max} caracteres."
-      }
+      },
+      "soon": "Esta caixa ainda está a ser ligada. Por agora, conta-nos o sabor no Instagram:"
     }
   },
   "chourico": {
@@ -160,7 +161,8 @@
       "body": "Manda mensagem no WhatsApp e combinamos a tua caixa.",
       "cta": "Encomendar por WhatsApp",
       "note": "Levantamento na Rua de S. Paulo 65.",
-      "message": "Olá! Gostava de encomendar uma caixa de cookies da Cookie House."
+      "message": "Olá! Gostava de encomendar uma caixa de cookies da Cookie House.",
+      "demo": "Demonstração: o número de WhatsApp ainda vai ser configurado."
     },
     "instagram": "Instagram",
     "maps": "Google Maps",
@@ -208,5 +210,6 @@
       "line": "O sabor proibido.",
       "cta": "Ver o desafio"
     }
-  }
+  },
+  "skip": "Saltar para o conteúdo"
 }

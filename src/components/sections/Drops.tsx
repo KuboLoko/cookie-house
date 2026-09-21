@@ -58,10 +58,10 @@ export default function Drops({ labels: t }: { labels: DropsLabels }) {
       aria-labelledby="drops-title"
       className="bg-theme-bg text-theme-fg transition-colors duration-500"
     >
-      <ScrollReveal className="mx-auto max-w-7xl px-5 py-24 sm:px-10 md:py-36">
+      <ScrollReveal className="mx-auto max-w-7xl px-5 py-24 sm:px-10 md:py-40">
         <p
           data-reveal
-          className="font-mono text-xs uppercase tracking-widest opacity-75"
+          className="font-mono text-xs uppercase tracking-widest"
         >
           {t.label}
         </p>
@@ -82,7 +82,7 @@ export default function Drops({ labels: t }: { labels: DropsLabels }) {
           <div data-reveal className="min-w-0 md:col-span-5">
             <p
               id="drops-list-label"
-              className="mb-4 font-mono text-xs uppercase tracking-widest opacity-75"
+              className="mb-4 font-mono text-xs uppercase tracking-widest"
             >
               {t.hint}
             </p>
@@ -111,11 +111,11 @@ export default function Drops({ labels: t }: { labels: DropsLabels }) {
                     }}
                     className={`flex shrink-0 snap-start items-baseline gap-3 rounded-full border px-4 py-2 text-left outline-offset-4 transition-[opacity,border-color] duration-300 focus-visible:outline-2 focus-visible:outline-current md:w-full md:rounded-none md:border-0 md:border-b md:px-0 md:py-5 ${
                       on
-                        ? "border-current opacity-100"
-                        : "border-current/30 opacity-60 hover:opacity-100 md:border-current/25"
+                        ? "border-current bg-theme-fg text-theme-bg md:border-theme-accent md:bg-transparent md:text-theme-fg"
+                        : "border-current/40 hover:bg-current/10 md:border-current/25"
                     }`}
                   >
-                    <span className="font-mono text-xs tracking-widest text-theme-accent transition-colors duration-500 md:text-sm">
+                    <span className="font-mono text-xs tracking-widest md:text-sm">
                       {num(i)}
                     </span>
                     <span className="font-display text-base font-extrabold leading-tight [font-variation-settings:'SOFT'_100,'WONK'_1] md:text-3xl lg:text-4xl">
@@ -123,7 +123,7 @@ export default function Drops({ labels: t }: { labels: DropsLabels }) {
                     </span>
                     <span
                       aria-hidden
-                      className={`ml-auto hidden font-mono text-lg transition-opacity md:inline ${on ? "opacity-100" : "opacity-0"}`}
+                      className={`ml-auto hidden font-mono text-lg text-theme-accent transition-opacity md:inline ${on ? "opacity-100" : "opacity-0"}`}
                     >
                       →
                     </span>
@@ -136,13 +136,13 @@ export default function Drops({ labels: t }: { labels: DropsLabels }) {
               href="#chourico"
               className="mt-2 flex items-baseline gap-3 py-4 outline-offset-4 focus-visible:outline-2 focus-visible:outline-current md:border-b md:border-current/25 md:py-5"
             >
-              <span className="font-mono text-xs tracking-widest text-theme-accent transition-colors duration-500 md:text-sm">
+              <span className="font-mono text-xs tracking-widest md:text-sm">
                 {num(flavors.length)}
               </span>
               <span className="font-display text-base font-extrabold leading-tight [font-variation-settings:'SOFT'_100,'WONK'_1] md:text-3xl lg:text-4xl">
                 {t.chourico.name}
               </span>
-              <span className="font-mono text-xs uppercase tracking-widest opacity-75">
+              <span className="font-mono text-xs uppercase tracking-widest">
                 {t.chourico.line}{" "}
                 <span className="underline underline-offset-4">
                   {t.chourico.cta} ↓
@@ -193,10 +193,7 @@ export default function Drops({ labels: t }: { labels: DropsLabels }) {
                       transition={{ duration: 0.25 }}
                     >
                       <p className="font-mono text-xs uppercase tracking-widest">
-                        <span className="text-theme-accent transition-colors duration-500">
-                          {num(activeIndex)}
-                        </span>{" "}
-                        · {item.tag}
+                        {num(activeIndex)} · {item.tag}
                       </p>
                       <h3 className="mt-3 font-display text-3xl font-extrabold leading-tight [font-variation-settings:'SOFT'_100,'WONK'_1,'opsz'_72] sm:text-5xl">
                         {item.name}

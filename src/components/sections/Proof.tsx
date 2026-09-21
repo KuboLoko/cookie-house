@@ -28,7 +28,7 @@ export default function Proof({ locale }: { locale: Locale }) {
         <h2
           id="proof-title"
           data-lines
-          className="mt-6 font-display text-[clamp(2.5rem,6.4vw,6rem)] font-light leading-[1] tracking-[-0.02em] [font-variation-settings:'SOFT'_0,'WONK'_0,'opsz'_144]"
+          className="mt-6 font-display text-[clamp(2.5rem,6vw,5.5rem)] font-light leading-[1] tracking-[-0.02em] [font-variation-settings:'SOFT'_0,'WONK'_0,'opsz'_144]"
         >
           {t.titleLines.map((line) => (
             <span key={line} className="block overflow-hidden pb-[0.08em]">
@@ -101,7 +101,7 @@ export default function Proof({ locale }: { locale: Locale }) {
           </div>
 
           <div data-reveal className="lg:col-span-5">
-            <p className="font-mono text-[0.7rem] uppercase tracking-widest opacity-60">
+            <p className="font-mono text-[0.7rem] uppercase tracking-widest opacity-80">
               {t.paraphraseLabel}
             </p>
             <p className="mt-4 max-w-md font-display text-2xl font-light leading-snug sm:text-3xl [font-variation-settings:'SOFT'_0,'WONK'_0,'opsz'_72]">

@@ -15,7 +15,7 @@ export default function Makers({ locale }: { locale: Locale }) {
       aria-labelledby="makers-title"
       className="bg-theme-bg text-theme-fg"
     >
-      <ScrollReveal className="mx-auto max-w-7xl px-5 py-20 sm:px-10 md:py-28">
+      <ScrollReveal className="mx-auto max-w-7xl px-5 py-20 sm:px-10 md:py-32">
         <h2
           id="makers-title"
           data-reveal

@@ -31,3 +31,6 @@ export const business = {
  * com um número inválido. Não usar números pessoais aqui.
  */
 export const WHATSAPP_NUMBER_PLACEHOLDER = "351000000000";
+
+/** true enquanto o número acima for o falso: o rodapé mostra uma nota de demonstração (some sozinha com o número real). */
+export const WHATSAPP_IS_PLACEHOLDER = WHATSAPP_NUMBER_PLACEHOLDER === "351000000000";

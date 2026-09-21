@@ -27,7 +27,7 @@ export default function Hero({ locale }: { locale: Locale }) {
       />
       <div
         aria-hidden
-        className="absolute inset-0 -z-10 bg-gradient-to-b from-choc/70 via-choc/25 to-choc/90"
+        className="absolute inset-0 -z-10 bg-gradient-to-b from-choc/70 via-choc/55 to-choc/90"
       />
 
       <header className="flex items-start justify-between px-5 pt-5 sm:px-10 sm:pt-8">
@@ -35,7 +35,7 @@ export default function Hero({ locale }: { locale: Locale }) {
           <p className="font-display text-xl font-semibold [font-variation-settings:'SOFT'_100,'WONK'_1]">
             {t.hero.brand}
           </p>
-          <p className="mt-1 font-mono text-[0.7rem] uppercase tracking-widest text-cream/75">
+          <p className="mt-1 font-mono text-[0.7rem] uppercase tracking-widest text-cream/90">
             {t.hero.eyebrow}
           </p>
         </div>
@@ -53,7 +53,7 @@ export default function Hero({ locale }: { locale: Locale }) {
             href={t.hero.switchTo.href}
             lang={locale === "pt" ? "en" : "pt-PT"}
             aria-label={t.hero.switchTo.label}
-            className="text-cream/75 underline-offset-4 hover:text-cream hover:underline focus-visible:underline"
+            className="text-cream/90 underline-offset-4 hover:text-cream hover:underline focus-visible:underline"
           >
             {t.hero.switchTo.code}
           </Link>
@@ -71,7 +71,7 @@ export default function Hero({ locale }: { locale: Locale }) {
         <p className="mt-5 max-w-xl text-balance font-display text-2xl leading-snug sm:text-3xl [font-variation-settings:'SOFT'_100,'WONK'_1]">
           {t.hero.tagline}
         </p>
-        <p className="mt-2 font-mono text-xs uppercase tracking-widest text-cream/75">
+        <p className="mt-2 font-mono text-xs uppercase tracking-widest text-cream/90">
           {t.hero.note}
         </p>
 

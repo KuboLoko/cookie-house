@@ -17,8 +17,14 @@ export default function Home({ locale }: { locale: Locale }) {
 
   return (
     <>
+      <a
+        href="#main"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[200] focus:rounded-full focus:bg-cream focus:px-5 focus:py-3 focus:font-mono focus:text-xs focus:uppercase focus:tracking-widest focus:text-choc"
+      >
+        {t.skip}
+      </a>
       <Entry labels={t.entry} />
-      <main>
+      <main id="main" tabIndex={-1} className="outline-none">
         <Hero locale={locale} />
         <Paris locale={locale} />
         <Manifesto locale={locale} />

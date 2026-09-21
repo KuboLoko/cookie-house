@@ -30,7 +30,7 @@ export default function Visit({ locale }: { locale: Locale }) {
         <h2
           id="visit-title"
           data-lines
-          className="mt-6 font-display text-[clamp(2.75rem,7.4vw,7rem)] font-light leading-[0.98] tracking-[-0.02em] [font-variation-settings:'SOFT'_0,'WONK'_0,'opsz'_144]"
+          className="mt-6 font-display text-[clamp(2.75rem,7.2vw,7rem)] font-light leading-[0.98] tracking-[-0.02em] [font-variation-settings:'SOFT'_0,'WONK'_0,'opsz'_144]"
         >
           <span className="block overflow-hidden pb-[0.08em]">
             <span data-line className="block text-balance">
@@ -117,7 +117,11 @@ export default function Visit({ locale }: { locale: Locale }) {
             <p className="mt-4 max-w-sm text-lg leading-relaxed">{t.form.intro}</p>
           </div>
           <div className="relative md:col-span-7">
-            <SuggestFlavor labels={t.form} locale={locale} />
+            <SuggestFlavor
+              labels={t.form}
+              locale={locale}
+              instagram={business.instagram}
+            />
           </div>
         </div>
       </ScrollReveal>

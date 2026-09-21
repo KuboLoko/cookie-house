@@ -3,7 +3,11 @@ import FooterCrumbs from "@/components/motion/FooterCrumbs";
 import ScrollReveal from "@/components/motion/ScrollReveal";
 import MapCta from "@/components/ui/MapCta";
 import { footerLogo } from "@/content/brand";
-import { WHATSAPP_NUMBER_PLACEHOLDER, business } from "@/content/business";
+import {
+  WHATSAPP_IS_PLACEHOLDER,
+  WHATSAPP_NUMBER_PLACEHOLDER,
+  business,
+} from "@/content/business";
 import { getDictionary, type Locale } from "@/i18n";
 import { whatsappLink } from "@/lib/whatsapp";
 
@@ -28,7 +32,7 @@ export default function Footer({ locale }: { locale: Locale }) {
     >
       <FooterCrumbs />
 
-      <ScrollReveal className="mx-auto max-w-7xl px-5 pb-28 pt-20 sm:px-10 md:pt-28 md:pb-32">
+      <ScrollReveal className="mx-auto max-w-7xl px-5 pb-28 pt-20 sm:px-10 md:pt-32 md:pb-32">
         <div className="grid items-center gap-14 md:grid-cols-12 md:gap-10">
           <div
             data-reveal
@@ -53,6 +57,11 @@ export default function Footer({ locale }: { locale: Locale }) {
               <p className="mt-5 font-mono text-xs uppercase tracking-widest opacity-70">
                 {t.preorder.note}
               </p>
+              {WHATSAPP_IS_PLACEHOLDER && (
+                <p className="mt-3 border-t border-cream/20 pt-3 font-mono text-[0.7rem] uppercase tracking-widest text-caramel">
+                  {t.preorder.demo}
+                </p>
+              )}
             </div>
           </div>
 
